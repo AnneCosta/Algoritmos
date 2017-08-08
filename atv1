@@ -2,6 +2,7 @@
 #include <locale.h>
 
 int main(){
+    setlocale(LC_ALL,"portuguese_Brazil");
     int x, cont, cart, g[13], A[13];
     
     printf("Digite o número do seu cartão: ");
