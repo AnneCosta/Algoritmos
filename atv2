@@ -14,9 +14,6 @@ int main () {
         if (mat[i]==j) {
             cont+1;
         }
-        else {
-            cont-cont;
-        }
     }
     
     if(cont!=0){
