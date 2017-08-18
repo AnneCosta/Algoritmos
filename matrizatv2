@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+	float notas[3][3], trab, prov, media, linha;
+	for (linha=0; linha<3; linha++) {
+		for(trab=0; trab<3; trab++) {
+			printf("Informe a %d° nota do trabalho: ", trab+1);
+			scanf("%d", &notas[linha][0]);
+		}
+		for(prov=0; prov<3; prov++) {
+			printf("Informe a %d° nota da prova: ", prov+1);
+			scanf("%d", &notas[linha][1]);
+		}
+	}
+}
