@@ -18,5 +18,10 @@ int main()
             cont++;
         }
     }
-    printf("O número %d repetiu-se %d vezes.", num2, cont);
+    if(cont!=0){
+		printf("\nO número %d repetiu-se %d vezes.", num2, cont);
+	}
+    if(cont==0){
+		printf("\nO número %d não existe dentre os demais.", num2);
+	}
 }
