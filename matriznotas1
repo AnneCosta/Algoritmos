@@ -11,8 +11,8 @@ int main() {
 		scanf("%f", &notas[linha][1]);
 		notas[linha][2]=(notas[linha][0]+notas[linha][1])/2;
 	}
-	printf("\nTrab. / Prova / Média");
+	printf("\n\tTrab. | Prova | Média");
 	for(linha=0; linha<3; linha++) {
-		printf("\n[%.1f]   [%.1f]   [%.1f]", notas[linha][0], notas[linha][1], notas[linha][2]);
+		printf("\n\t[%.1f] | [%.1f] | [%.1f]", notas[linha][0], notas[linha][1], notas[linha][2]);
 	}
 }
