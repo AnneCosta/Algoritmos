@@ -7,29 +7,29 @@ int main () {
 	
 	for(l=0; l<6; l++){
 		for(c=0; c<6; c++) {
-    		M[l][c]=10;
-    		N[l][c]=6;
+    		M[l][c]=1+rand()%25;
+    		N[l][c]=1+rand()%15;
     	}
 	}
+	printf("---- Matriz 1 ----\n");
 	for(l=0; l<6; l++) {
-		//printf("---- Linha %d ----\n", l+1);
 		for (c=0; c<6; c++) {
 			printf("|%d|\t", M[l][c]);
 		}
-		printf("\n");
+		printf("\n\n");
 	}
-	
+	printf("---- Matriz 2 ----\n");
 	for(l=0; l<6; l++) {
-		//printf("---- Linha %d ----\n", l+1);
 		for (c=0; c<6; c++) {
 			printf("|%d|\t", N[l][c]);
 		}
-		printf("\n");
+		printf("\n\n");
 	}
+	printf("---- Valor dos produtos ----\n");
 	for(l=0; l<6; l++) {
 		for(c=0; c<6; c++) {
 			P[l][c]= M[l][c]*N[l][c];
-			printf("\n\nO valor do %d° produto é: %d", c+1, P[l][c]);
+			printf("|%d|\t", P[l][c]);
 		}
 	}
 }
