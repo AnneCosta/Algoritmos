@@ -5,13 +5,13 @@ int menu () {
 	setlocale(LC_ALL,"portuguese_Brazil");
 	int r;
 	printf("----- VETOR -----\n");
-	printf("1 - MAIOR NÚMERO\n");
-	printf("2 - MENOR NÚMERO\n");
+	printf("1 - MAIOR NÃšMERO\n");
+	printf("2 - MENOR NÃšMERO\n");
 	printf("3 - SOMA DOS VALORES\n");
 	printf("4 - TODOS OS VALORES\n");
 	printf("5 - SAIR\n");
 	printf("-----------------\n");
-	printf("\nDIGITE SUA OPÇÃO: ");
+	printf("\nDIGITE SUA OPÃ‡ÃƒO: ");
 	scanf("%d", &r);
 	return r;
 }
