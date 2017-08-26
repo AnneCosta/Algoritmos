@@ -7,12 +7,12 @@ int menu () {
 	int r;
 	printf("-------------------\n");
 	printf("1 - SOMA\n");
-	printf("2 - SUBTRA«√O\n");
-	printf("3 - MULTIPLICA«√O\n");
-	printf("4 - DIVIS√O\n");
+	printf("2 - SUBTRA√á√ÉO\n");
+	printf("3 - MULTIPLICA√á√ÉO\n");
+	printf("4 - DIVIS√ÉO\n");
 	printf("5 - SAIR\n");
 	printf("-------------------\n");
-	printf("\nDIGITE SUA OP«√O: ");
+	printf("\nDIGITE SUA OP√á√ÉO: ");
 	scanf("%d", &r);
 	return r;
 }
@@ -31,7 +31,7 @@ void multiplicacao (int x, int y) {
 
 void divisao (int x, int y) {
 	while (y==0){
-		printf ("N„o È permitido divis„o por zero. Digite outro valor: ");
+		printf ("N√£o √© permitido divis√£o por zero. Digite outro valor: ");
 		scanf("%d", &y);
 	}
 	printf("%d/%d: %d\n", x, y, x/y);
