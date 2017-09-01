@@ -1,6 +1,7 @@
-#include <stdio.h>
+include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
+
 int menu () {
 	setlocale(LC_ALL,"portuguese_Brazil");
 	int r;
@@ -12,29 +13,27 @@ int menu () {
 	printf("5 - SAIR\n");
 	printf("-----------------\n");
 	printf("\nDIGITE SUA OPÇÃO: ");
-	scanf("%d", &r);
+	scanf("%d", &r);	
 	return r;
 }
 void maior (int v[]) {
 	int x, mai;
 	mai=v[0];
 	for (x=1; x<10; x++) {
-		if (v[x]>mai) {
-			mai=v[x];
-		}
+		if (v[x]>mai) mai=v[x];
 	}
 	printf("\nMaior valor do vetor: %d\n", mai);
 }
+
 void menor (int v[]) {
 	int x, men;
 	men=v[0];
 	for (x=1; x<10; x++) {
-		if (v[x]<men) {
-			men=v[x];
-		}
+		if (v[x]<men) men=v[x];
 	}
 	printf("\nMenor valor do vetor: %d\n", men);
 }
+
 void soma (int v[]) {
 	int x, soma=0;
 	for (x=1; x<10; x++) {
@@ -42,6 +41,7 @@ void soma (int v[]) {
 	}
 	printf("\nSoma: %d\n", soma);
 }
+
 void todos (int v[]) {
 	int x;
 	for (x=1; x<10; x++) {
@@ -50,19 +50,20 @@ void todos (int v[]) {
 }
 
 main () {
-	int v[10], x, r;
+	int v[10], x, r, cont;
+	for(cont = 0; cont < 10; cont++) {
+		printf("DIGITE O VALOR NA POSICAO %D DO VETOR:",cont);
+		scanf("%d",&v[cont]);
+	};
+	
 	printf("----- VETOR -----\n");
 	r=menu();
-	while (r!=5) {
-		for(x=1; x<10; x++) {
-			v[x]=1+rand()%15;
-		}
+	//system("cls");
+	while(r != 5) {
+		r=menu();
+		if (r==1) maior(v);
+		if (r==2) menor(v);
+		if (r==3) soma(v);
+		if (r==4) todos(v);
 	}
-	system("cls");
-	printf("----- VETOR -----\n");
-	if (r==1) maior(v);
-	if (r==2) menor(v);
-	if (r==3) soma(v);
-	if (r==4) todos(v);
-	r=menu();
-	}
+}
