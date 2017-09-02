@@ -14,19 +14,19 @@ main() {
 	int cont;
 	struct aluno al[6];
 	for (cont=0; cont<6; cont++) {
-		printf("Informe o nome do %d° aluno: ", cont+1);
+		printf("Informe o nome do %dÂ° aluno: ", cont+1);
 		scanf("%s", &al[cont].nome);
-		printf("Informe a matrícula do %d° aluno: ", cont+1);
+		printf("Informe a matrÃ­cula do %dÂ° aluno: ", cont+1);
 		scanf("%d", &al[cont].matricula);
-		printf("Informe o endereço do %d° aluno: ", cont+1);
+		printf("Informe o endereÃ§o do %dÂ° aluno: ", cont+1);
 		scanf("%s", &al[cont].end);
-		printf("Informe o telefone do %d° aluno: ", cont+1);
+		printf("Informe o telefone do %dÂ° aluno: ", cont+1);
 		scanf("%s", &al[cont].tel);
-		printf("Informe a nota do %d° aluno: ", cont+1);
+		printf("Informe a nota do %dÂ° aluno: ", cont+1);
 		scanf("%f", &al[cont].nota);
 		system("cls");
 	}
-	printf("\nNome    Matrícula    Endereço  Telefone  Nota\n");
+	printf("\nNome    MatrÃ­cula    EndereÃ§o  Telefone  Nota\n");
 	for (cont=0; cont<5; cont++){
 		printf("%s\t\t%d\t%s\t%s\t%.1f\n", al[cont].nome, al[cont].matricula, al[cont].end, al[cont].tel, al[cont].nota);
 	}
