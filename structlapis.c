@@ -20,6 +20,6 @@ main() {
 	}
 	printf("\nDureza  Fabricante      Numero\n");
 	for (i=0; i<3; i++){
-		printf("%d\t%c\t\t%d\n", p[i].dureza, p[i].fabricante, p[i].numero);
+		printf("%d\t%s\t\t%d\n", p[i].dureza, p[i].fabricante, p[i].numero);
 	}
 }
