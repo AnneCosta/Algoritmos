@@ -11,11 +11,11 @@ main() {
 	int i;
 	struct lapis p[3];
 	for (i=0; i<3; i++) {
-		printf("Informe a dureza do lápis %d: ", i+1);
+		printf("Informe a dureza do lÃ¡pis %d: ", i+1);
 		scanf("%d", &p[i].dureza);
-		printf("Informe o fabricante do lápis %d: ", i+1);
+		printf("Informe o fabricante do lÃ¡pis %d: ", i+1);
 		scanf("%s", &p[i].fabricante);
-		printf("Informe o número do lápis %d: ", i+1);
+		printf("Informe o nÃºmero do lÃ¡pis %d: ", i+1);
 		scanf("%d", &p[i].numero);
 	}
 	printf("\nDureza  Fabricante      Numero\n");
