@@ -8,7 +8,7 @@ struct emprego{
 
 main() {
 	setlocale(LC_ALL,"portuguese_Brazil");
-	int i, x;
+	int i;
 	struct emprego em[5];
 	for (i=0; i<5; i++) {
 		printf("Informe a matrícula do %d° funcionário: ", i+1);
