@@ -7,7 +7,7 @@ struct aluno {
 	char end[100];
 	char tel[20];
 	float nota;
-}a;
+};
 
 main() {
 	setlocale(LC_ALL,"portuguese_Brazil");
