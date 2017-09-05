@@ -3,35 +3,36 @@
 #include <locale.h>
 #define tam 3
 
-void diagonalsec (float mat[][tam]) {
-	int linha, coluna, mult;
-	for (linha=0; linha<tam; linha++) {
-		for (coluna=0; coluna<tam; coluna++) {
-			if (coluna == (tam-1-linha)) {
-				if ((linha+coluna)==(tam-1)) {
-					mult *= mat [linha][coluna];
-					printf("|%f|-|%f|", mat[linha][coluna]);	
+int diagonalsec (int mat[][tam]) {
+	int l, c, diagSec=0;
+	for (l=0; l<tam; l++) {
+		for (c=0; c<tam; c++) {
+			if (c == (tam-1-l)) {
+				if ((l+c)==(tam-1)) {	
+					diagSec*=mat[l][c];
 				}
 			}
 		}
 	}
+	printf("%d", diagSec);
 }
 main (){
 	setlocale(LC_ALL,"portuguese_Brazil");
-	float mat[tam][tam];
-	int linha, coluna;
-	for (linha=0; linha<tam; linha++) {
-		printf("Preenchendo a %d° linha", linha+1);
-		for (coluna=0; coluna<tam; coluna++) {
-			printf("Informe o %d° valor: ", coluna+1);
-			scanf("%f", mat[linha][coluna]);
+	int mat[tam][tam];
+	int l, c, diagSec1, diagSec;
+	for (l=0; l<tam; l++) {
+		printf("Preenchendo a %d° linha\n", l+1);
+		for (c=0; c<tam; c++) {
+			printf("Informe o %d° valor: ", c+1);
+			scanf("%d", &mat[l][c]);
 		}
-		system("cls");
 	}
 	
-	for (linha=0; linha<tam; linha++) {
+	diagonalsec (mat);
+	/*for (linha=0; linha<tam; linha++) {
 		for (coluna=0; coluna<tam; coluna++) {
-			diagonalsec (mat);
+			
 		}
 	}
+	*/
 }
