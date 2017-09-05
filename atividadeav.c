@@ -3,13 +3,14 @@
 #include <locale.h>
 #define tam 3
 
-int diagonalsec (int mat[][tam]) {
-	int l, c, diagSec=0;
+int diagonalsec (int mat[tam][tam]) {
+	int l, c, diagSec;
 	for (l=0; l<tam; l++) {
 		for (c=0; c<tam; c++) {
 			if (c == (tam-1-l)) {
+				diagSec=mat[l][c];
 				if ((l+c)==(tam-1)) {	
-					diagSec*=mat[l][c];
+					diagSec*=mat[l][c];	
 				}
 			}
 		}
@@ -19,7 +20,7 @@ int diagonalsec (int mat[][tam]) {
 main (){
 	setlocale(LC_ALL,"portuguese_Brazil");
 	int mat[tam][tam];
-	int l, c, diagSec1, diagSec;
+	int l, c, diagSec;
 	for (l=0; l<tam; l++) {
 		printf("Preenchendo a %d° linha\n", l+1);
 		for (c=0; c<tam; c++) {
