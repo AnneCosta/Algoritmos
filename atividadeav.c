@@ -21,18 +21,11 @@ main (){
 	int mat[tam][tam];
 	int l, c, diagSec1, diagSec;
 	for (l=0; l<tam; l++) {
-		printf("Preenchendo a %d° linha\n", l+1);
+		printf("Preenchendo a %dÂ° linha\n", l+1);
 		for (c=0; c<tam; c++) {
-			printf("Informe o %d° valor: ", c+1);
+			printf("Informe o %dÂ° valor: ", c+1);
 			scanf("%d", &mat[l][c]);
 		}
 	}
-	
 	diagonalsec (mat);
-	/*for (linha=0; linha<tam; linha++) {
-		for (coluna=0; coluna<tam; coluna++) {
-			
-		}
-	}
-	*/
 }
