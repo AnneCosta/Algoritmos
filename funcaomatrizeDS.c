@@ -5,11 +5,12 @@
 
 int exibematriz (int mat[][tam]) {
 	int l, c;
-	printf("---- Matriz ----\n");
+	printf("\n   ---- Matriz ----\n\n");
 	for (l=0; l<tam; l++) {
 		for (c=0; c<tam; c++) {
-			printf("\t|%d|\n", mat[l][c]);
+			printf("   |%d| ", mat[l][c]);
 		}
+		printf("\n");
 	}
 }
 
