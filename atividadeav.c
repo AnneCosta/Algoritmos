@@ -3,7 +3,7 @@
 #include <locale.h>
 #define tam 3
 
-int diagonalsec (int mat[tam][tam]) {
+int diagonalsec (int mat[][tam]) {
 	int l, c, diagSec;
 	for (l=0; l<tam; l++) {
 		for (c=0; c<tam; c++) {
