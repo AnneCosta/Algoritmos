@@ -9,5 +9,5 @@ int main (){
 	
 	F=(9*C+160)/5;
 	
-	printf("A temperatura, em Fahrenheit, é: %.1f", F);
+	printf("A temperatura, em Fahrenheit, Ã©: %.1f", F);
 }
