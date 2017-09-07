@@ -45,6 +45,7 @@ main (){
 			printf("Informe o %d° valor: ", c+1);
 			scanf("%d", &mat[l][c]);
 		}
+		system("cls");
 	}
 	
 	exibematriz (mat);
