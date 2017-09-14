@@ -15,19 +15,11 @@ int exibematriz (int mat[][tam]) {
 }
 
 int diagonalsec (int mat[][tam]) {
-	int l, c, diagSec=0, diagSec1=1;
-	for(l=0; l<tam; l++) {
-		for(c=0; c<tam; c++) {
-			if (c==(tam-1-l)) {
-				diagSec=mat[l][c];
-			}
-		}
-	}
-	
+	int l, c, diagSec=1;
 	for(l=0; l<tam; l++) {
 		for(c=0; c<tam; c++) {
 			if (l+c==tam-1) {
-				diagSec1*=mat[l][c];
+				diagSec*=mat[l][c];
 			}
 		}
 	}
