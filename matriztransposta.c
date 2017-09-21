@@ -6,9 +6,9 @@ int main() {
 	setlocale(LC_ALL,"portuguese_Brazil");
 	int M[3][4], MT[4][3], i, j, aux;
 	for(i=0; i<3; i++) {
-		printf("--- Preenchendo a %d° linha ---\n",i+1);
+		printf("--- Preenchendo a %dÂ° linha ---\n",i+1);
 		for (j=0; j<4; j++) {
-			printf("Informe o %d° valor: ", j+1);
+			printf("Informe o %dÂ° valor: ", j+1);
 			scanf("%d", &M[i][j]);
 		}
 		printf("\n");
