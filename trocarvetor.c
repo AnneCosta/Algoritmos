@@ -5,7 +5,7 @@ int main() {
 	setlocale(LC_ALL,"portuguese_Brazil");
 	int N[20], aux, i=0, j=19;
 	for(i=0; i<20; i++){
-		printf("Preencha a %d° linha do vetor: ", i+1);
+		printf("Preencha a %dÂ° linha do vetor: ", i+1);
 		scanf("%d", &N[i]);
 	}
 	printf("\n");
