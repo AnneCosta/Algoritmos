@@ -1,18 +1,5 @@
-## ANNE TEM Q CRIAR O README PRA EXPLICAR O PROJETO
 
+## Repositório para atividades e posteriores consultas.
 
-# FONTE H1
-## FONTE H2
-### FONTE H3 
-
-````c
-printf("exemplo de code em c");
-````
-
-````java
-System.out.println("exemplo de code em java");
-````
-
-````js
-console.log("exemplo de code em javascript");
-````
+> LCC - 2017.1  
+> IF Baiano
