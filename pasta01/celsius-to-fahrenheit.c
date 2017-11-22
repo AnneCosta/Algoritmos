@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+/*
+add um comentário exemplo de teste
+*/
+
+int main (){
+	setlocale(LC_ALL,"portuguese_Brazil");
+	float F=0, C=0;
+	
+	scanf("%f",&C);
+	
+	F=(9*C+160)/5;
+	
+	printf("A temperatura, em Fahrenheit, é: %.1f", F);
+}
