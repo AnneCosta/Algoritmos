@@ -2,9 +2,9 @@
 ## Repositório para atividades e posteriores consultas.
 
 ### 1° Semestre
-Algoritmo e Introdução a Computação.
+Algoritmos e Introdução a Programação.
 ### 2° Semestre
-Estrutura de dados.
+Estrutura de Dados.
 
 * * *
 > LCC - 2017.1  
