@@ -21,7 +21,7 @@ int menu(){
 	printf("|   5 - ESVAZIAR A PILHA          |\n");
 	printf("|   6 - SAIR                      |\n");
 	printf(" _________________________________\n\n");
-	printf("Digite sua opção\n");
+	printf("Digite sua opÃ§Ã£o\n");
 	printf("> ");
 	scanf("%d", &r);
 	
