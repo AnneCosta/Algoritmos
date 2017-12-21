@@ -16,14 +16,14 @@ int menu(){
 	printf(" ____________________________________________________________ \n");
 	printf("|                                                            |\n");
 	printf("|   1 - Inserir no final                                     |\n");
-	printf("|   2 - Inserir no K_Èsimo nÛ da lista                       |\n");
-	printf("|   3 - Mostrar a matrÌcula do maior e menor sal·rio         |\n");
-	printf("|   4 - Remover o K_Èsimo nÛ da lista                        |\n");
+	printf("|   2 - Inserir no K_√©simo n√≥ da lista                       |\n");
+	printf("|   3 - Mostrar a matr√≠cula do maior e menor sal√°rio         |\n");
+	printf("|   4 - Remover o K_√©simo n√≥ da lista                        |\n");
 	printf("|   5 - Ordenar a lista                                      |\n");
 	printf("|   6 - Exibir a lista                                       |\n");
 	printf("|   7 - Sair                                                 |\n");
 	printf("|____________________________________________________________|\n\n");
-	printf("Digite uma opÁ„o\n");
+	printf("Digite uma op√ß√£o\n");
 	printf("> ");
 	scanf("%d", &r);
 	
@@ -40,9 +40,9 @@ void inserirFinal(Lista *L){
 		printf("Lista cheia.\n");
 	}
 	else{
-		printf("Informe a matrÌcula (de 4 n˙meros): ");
+		printf("Informe a matr√≠cula (de 4 n√∫meros): ");
 		scanf("%d", &L->mat[L->t]);
-		printf("Informe o sal·rio (utilize ',' invÈs de '.'): ");
+		printf("Informe o sal√°rio (utilize ',' inv√©s de '.'): ");
 		scanf("%f", &L->sal[L->t]);
 		L->t++;
 	}
@@ -50,19 +50,19 @@ void inserirFinal(Lista *L){
 //2
 void inserirK(Lista *L){
 	int k, i;
-	printf("Informe a posiÁ„o que deseja adicionar: ");
+	printf("Informe a posi√ß√£o que deseja adicionar: ");
 	scanf("%d", &k);
 	
 	if (k > m-1 || k < 0){
-		printf("PosiÁ„o fora do limite.\n");
+		printf("Posi√ß√£o fora do limite.\n");
 	}
 	else{
 		L->mat[L->t] = L->mat[k];
 		L->sal[L->t] = L->sal[k];
 		
-		printf("MatrÌcula (de 4 n˙meros): ");
+		printf("Matr√≠cula (de 4 n√∫meros): ");
 		scanf("%d", &L->mat[k]);
-		printf("Sal·rio (utilize ',' invÈs de '.'): ");
+		printf("Sal√°rio (utilize ',' inv√©s de '.'): ");
 		scanf("%f", &L->sal[k]);
 		printf("\n");
 		
@@ -98,11 +98,11 @@ void removerK(Lista *L){
 	int auxM, auxS;
 	int k;
 	
-	printf("Informe a posiÁ„o que deseja remover: ");
+	printf("Informe a posi√ß√£o que deseja remover: ");
 	scanf("%d", &k);
 	
 	if((k < 0) || k>= L->t){
-		printf("PosiÁ„o fora dos limites.\n");	
+		printf("Posi√ß√£o fora dos limites.\n");	
 	}
 	else{
 		L->mat[k]= L->mat[L->t-1];
@@ -110,7 +110,7 @@ void removerK(Lista *L){
 		
 		L->t--;
 		
-		printf("PosiÁ„o removida.\n");
+		printf("Posi√ß√£o removida.\n");
 	}
 }
 //5
@@ -147,7 +147,7 @@ void exibirLista(Lista *L){
 		printf("Lista de cadastrados\n");
 	}
 	else{
-		printf("MATRÌCULA\tSAL¡RIO\n");
+		printf("MATR√≠CULA\tSAL√ÅRIO\n");
 		for(i=0; i<L->t; i++){
 			printf("%d\t%.2f\n", L->mat[i], L->sal[i]);
 		}
