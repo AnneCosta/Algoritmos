@@ -1,33 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
-typedef struct no{
+typedef struct Fila{
 	int info;
-	struct no* lig;
-}tno;
-
-typedef struct{
-	tno* inicio;
-	tno* fim;
+	struct Fila* prox;
 }fila;
+
+typedef struct 
 fila f;
 
 int menu(){
 	int r;
 	
-	printf("                                  Menu Fila");
-	printf("---------------------------------------------------------------------------");
-	printf("0 - SAIR");
-	printf("1 - INSERIR NO FINAL");
-	printf("2 - EXIBIR");
-	printf("3 - REMOVER DO INÍCIO");
-	printf("4 - ESVAZIAR");
-	printf("5 - MOSTRAR O VALOR MÉDIO");
-	printf("6 - MOSTRAR OS VALORES PARES");
-	printf("7 - CONTAR QUANTAS VEZES O VALOR K APARECE");
-	printf("8 - CRIAR UMA FILA F2 E PREENCHER COM OS VALORES DA FILA F NA ORDEM INVERSA");
-	printf("---------------------------------------------------------------------------");
-	printf("Digite a opção");
+	printf("                                  Menu Fila\n");
+	printf("---------------------------------------------------------------------------\n");
+	printf("0 - SAIR\n");
+	printf("1 - INSERIR NO FINAL\n");
+	printf("2 - EXIBIR\n");
+	printf("3 - REMOVER DO INÃCIO\n");
+	printf("4 - ESVAZIAR\n");
+	printf("5 - VALOR MÃ‰DIO\n");
+	printf("6 - VALORES PARES\n");
+	printf("7 - CONTAR QUANTAS VEZES O VALOR K APARECE\n");
+	printf("8 - CRIAR LISTA COM VALORES INVERSOS\n");
+	printf("---------------------------------------------------------------------------\n\n");
+	printf("Digite a opÃ§Ã£o");
 	printf("> ");
 	scanf("%d", &r);
 	
@@ -39,11 +37,11 @@ void inicia(fila *f){ // ok
 	f->fim = NULL;
 }
 
-void inserir(fila *f, tno *info){ // ok
-	tno *no;
-	no = malloc(sizeof(tno));
-	if(no == NULL){
-		printf("Operação não realizada.\n");
+void inserir(fila *f, int info){ // ok
+	fila *aux;
+	aux = (fila*) malloc(sizeof(fila));
+	if(aux == NULL){
+		printf("OperaÃ§Ã£o nÃ£o realizada.\n");
 	}
 	no->info = info;
 	no->lig = NULL;
@@ -69,7 +67,7 @@ void remover(fila *f, tno *info){
 	tno *no;
 	
 	if(f->inicio == NULL){
-		printf("Operação não realizada.\n");
+		printf("OperaÃ§Ã£o nÃ£o realizada.\n");
 	}
 	no = f->inicio;
 	*info = no->info;
